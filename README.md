@@ -25,7 +25,7 @@
    - Hostname: raspberrypi
    - Usuário: sel
    - Senha: usp
-4. Gravação executada com sucesso.
+4. Gravação com sucesso.
 5. A senha do usuário administrador foi alterada com o comando:
 
     sudo passwd root
@@ -44,7 +44,7 @@ Após reiniciado, os endereços IP foram verificados para possibilitar o acesso 
 
 ---
 
-### 3. Informações de hardware e software
+### 3. Informações
 Como o neofetch estava indisponível, foi usado o fastfetch.
 
     sudo apt install fastfetch
@@ -93,6 +93,7 @@ Para validar a comunicação na rede, foram realizados testes práticos de acess
 O histórico dos comandos da sessão foi solicitado:
 
 history
+history | tail -n 24 > historico_pratica2.txt
 
 *Observação importante:* Vale mencionar que o comando `history` no terminal não mostrou corretamente os comandos de forma correta, ou seja, ele ignorou praticamente todos os comandos realizados. Por isso que foi criado esse repositório, para mostrar as fotos tiradas durante a prática, servindo como prova de que todos os testes foram realizados.
 
@@ -102,6 +103,7 @@ sudo rpi-update cac01bed1224743104cb2a4103605f269f207b1a#6.1.54
 
 Finalizada a prática, a placa foi desligada.
 
+history -c
 sudo poweroff
 
 ---
@@ -144,9 +146,7 @@ Aqui seria o histórico certo caso ao aplicar o `history` certo no terminal, dev
     20  ssh sel@192.168.1.106
     21  cd Documents/
     22  ls
-    23  sudo rpi-update cac01bed1224743104cb2a4103605f269f207b1a#6.1.54
-    24  history
-    25  history -c
-    26  sudo poweroff
+    23  history
+    24  history | tail -n 24 > historico_pratica2.txt
 
 ---
