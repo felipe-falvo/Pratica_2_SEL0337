@@ -51,16 +51,17 @@ Como o neofetch estava indisponível, foi usado o fastfetch.
     fastfetch
     pinout
 
-**Dados:**
+**Dados do hardware:**
 - **OS:** Debian GNU/Linux 13 (trixie) aarch64
 - **Host:** Raspberry Pi 3 Model B Plus Rev 1.3
 - **Kernel:** Linux 6.18.34+rpt-rpi-v8
-- **Arquitetura / Versão ARM:** aarch64 (ARMv8 64-bit)
-- **SoC:** Broadcom BCM2837
-- **CPUs:** 4 núcleos (Quad-Core) @ 1.40 GHz
+- **Versão ARM:** aarch64 (ARMv8 64-bit)
+- **GPU:** Broadcom bcm2835-vc4
+- **CPU:** BCM2837 (4) @ 1.40 GHz
+- **SoC:** BCM2837
 - **RAM:** 1GB
 - **Armazenamento:** MicroSD
-- **Rede:** Gigabit Ethernet over USB 2.0 (máx. 300Mbps) e Wi-Fi nativo
+- **Rede:** Gigabit Ethernet over USB 2.0 e Wi-Fi
 
 **Requisito para rodar Linux Embarcado:**
 
