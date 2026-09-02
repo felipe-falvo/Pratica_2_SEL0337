@@ -66,7 +66,7 @@ Como o neofetch estava indisponível, foi usado o fastfetch.
 
 Analisando as informações do fastfetch, nota-se um sistema operacional robusto e de multitarefa, que é o Debian GNU/Linux. Assim, tem-se que é necessário possuir uma MMU (Memory Management Unit) no processador para conseguir rodar um SO dessa complexidade.
 
-Portanto, a relação entre possuir o Linux e a necessidade de ter uma MMU está na ideia do isolamento de memória, visto que para organizar diversos de processos ao mesmo tempo e de forma estável, o sistema operacional precisa garantir que um programa não interfira na memória de outro. Logo, A MMU cria uma ideia de que o software possui uma memória RAM própria, contínua e exclusiva para ele (memória virtual). Na prática, os programas dividem o esforço da CPU e rodam juntos de forma isolada nas suas memórias virtuais, não podendo acessar o hardware (pinos da placa) diretamente. Assim, sempre que for necessário mexer em um pino, é necessário pedir para o núcleo do sistema, o que acaba gerando atraso de processamento.
+Portanto, a relação entre possuir o Linux e a necessidade de ter uma MMU está na ideia do isolamento de memória, visto que para organizar diversos processos ao mesmo tempo e de forma estável, o sistema operacional precisa garantir que um programa não interfira na memória de outro. Logo, a MMU cria uma ideia de que o software possui uma memória RAM própria, contínua e exclusiva para ele (memória virtual). Na prática, os programas dividem o esforço da CPU e rodam juntos de forma isolada nas suas memórias virtuais, não podendo acessar o hardware (pinos da placa) diretamente. Assim, sempre que for necessário mexer em um pino, é necessário pedir para o núcleo do sistema, o que acaba gerando atraso de processamento.
 
 Já os microcontroladores que não possuem MMU, acessam a memória física de forma direta. Assim, sem a MMU, eles não conseguem criar memória virtual, não podendo isolar os programas, o que torna impossível rodar sistemas operacionais como o Linux.
 
@@ -146,6 +146,7 @@ Aqui seria o histórico certo caso ao aplicar o `history` certo no terminal, dev
     22  ls
     23  sudo rpi-update cac01bed1224743104cb2a4103605f269f207b1a#6.1.54
     24  history
-    25  sudo poweroff
+    25  history -c
+    26  sudo poweroff
 
 ---
