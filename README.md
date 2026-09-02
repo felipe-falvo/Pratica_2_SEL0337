@@ -106,7 +106,7 @@ sudo poweroff
 
 ---
 
-## 📸 Imagens da prática
+## Imagens da prática
 
 - **fastfetch.jpeg**: Execução do fastfetch mostrando o sistema operacional e uso de memória.
 - **pinout.jpeg**: Execução do pinout para mostrar as especificações da placa Raspberry Pi 3B+.
@@ -117,7 +117,7 @@ sudo poweroff
 
 ---
 
-## 💻 Histórico
+## Histórico
 
 Aqui seria o histórico certo caso ao aplicar o `history` certo no terminal, deveria aparecer:
 
